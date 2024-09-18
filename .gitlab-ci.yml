@@ -13,7 +13,7 @@ build:
     - docker buildx create --use
   script:
     - echo "Build images..."
-    - docker buildx build --platform linux/amd64 -t $DOCKERHUB_USERNAME/mysql-ttb-db-service:1.0 --push .
+    - docker buildx build --platform linux/amd64 -t $DOCKERHUB_USERNAME/mysql-ttb-db:1.0 --push .
   only:
     - main
 
